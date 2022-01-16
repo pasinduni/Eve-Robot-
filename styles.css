@@ -1,0 +1,143 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background: #032124;
+}
+
+.container {
+  width: 300px;
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .head {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a7a4a4), color-stop(#777575), to(#3f3e3e));
+  background: linear-gradient(#a7a4a4, #777575, #3f3e3e);
+  width: 250px;
+  height: 170px;
+  border-radius: 48% 52% 10% 10% / 62% 61% 37% 38%;
+  position: relative;
+}
+
+.container .body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ece9e9), color-stop(#797676), color-stop(#383636), to(#111111));
+  background: linear-gradient(#ece9e9, #797676, #383636, #111111);
+  width: 250px;
+  height: 310px;
+  border-radius: 10% 10% 47% 49% / 23% 21% 73% 75%;
+  margin-top: 3%;
+  position: relative;
+}
+
+.container .body::before {
+  content: "";
+  background: -webkit-gradient(linear, left top, left bottom, from(#ece9e9), color-stop(#797676), color-stop(#383636), to(#111111));
+  background: linear-gradient(#ece9e9, #797676, #383636, #111111);
+  width: 45px;
+  height: 240px;
+  position: absolute;
+  border-radius: 37% 64% 47% 49% / 53% 19% 86% 48%;
+  left: -53px;
+  top: 20%;
+}
+
+.container .body::after {
+  content: "";
+  background: -webkit-gradient(linear, left top, left bottom, from(#ece9e9), color-stop(#797676), color-stop(#383636), to(#111111));
+  background: linear-gradient(#ece9e9, #797676, #383636, #111111);
+  width: 45px;
+  height: 240px;
+  position: absolute;
+  border-radius: 55% 37% 40% 53% / 10% 49% 49% 91%;
+  right: -53px;
+  top: 20%;
+}
+
+.container .plate {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ece9e9), color-stop(#797676), color-stop(#383636), to(#111111));
+  background: linear-gradient(#ece9e9, #797676, #383636, #111111);
+  width: 250px;
+  height: 30px;
+  border-radius: 48% 50% 47% 49% / 23% 21% 73% 75%;
+  margin-top: 3%;
+  position: relative;
+}
+
+.container .eyes {
+  width: 200px;
+  height: 125px;
+  background: #000000;
+  position: relative;
+  border-radius: 48% 50% 10% 10% / 62% 61% 37% 38%;
+  margin: 0 auto;
+  top: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .eyes::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 50%;
+  left: 14%;
+  background: repeating-linear-gradient(0deg, #130a47, #1c0f4b 10px, #113872 10px, #203a97 20px);
+}
+
+.container .eyes::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 50%;
+  right: 14%;
+  background: repeating-linear-gradient(0deg, #130a47, #1c0f4b 10px, #113872 10px, #203a97 20px);
+}
+
+.container .mouth {
+  content: "";
+  width: 60px;
+  height: 12px;
+  position: relative;
+  border-radius: 10% 10% 10% / 20% 20% 30%;
+  left: 10%;
+  margin-top: 80px;
+  margin-right: 35px;
+  background: #9b9e9e;
+}
+/*# sourceMappingURL=styles.css.map */
