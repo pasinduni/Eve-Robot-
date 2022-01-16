@@ -160,6 +160,19 @@ body{
         border-radius: 10% 10% 47% 49% / 23% 21% 73% 75%;
         margin-top: 3%;
         position: relative;
+        animation: animate 3s alternate infinite;
+    
+        @keyframes animate{
+            0%{
+                transform: rotateZ(0deg);
+            }
+            50%{
+                transform: rotateZ(360deg);
+            }
+            100%{
+                transform: rotateZ(0deg);
+            }
+        }
     
         &::before{
             content: "";
